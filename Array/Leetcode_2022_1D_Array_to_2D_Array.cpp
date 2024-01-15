@@ -43,7 +43,7 @@ public:
         if ( S != m*n)
             return res;
 
-         res.assign(m , vector<int>(n));
+        res.assign(m , vector<int>(n));
         int r = 0, i = 0;
         while(i < S && r < m)
         {
