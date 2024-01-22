@@ -63,3 +63,28 @@ public:
         return temp;
     }
 };
+
+// Without recursion
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if (head == NULL || head->next == NULL)  
+            return head;
+
+        ListNode *res = new ListNode();
+        res->next = head;
+        ListNode* curr = res;
+
+        while (curr && curr->next && curr->next->next)
+        {
+            ListNode * node1 = curr->next;        //node1 - 1
+            ListNode * node2 = curr->next->next;  //node2 - 2
+            
+            node1->next = node2->next;      // 1-3-4
+            node2->next = node1;            // 2-1-3-4
+            curr->next = node2;             // res-2-1-3-4
+            curr = node1;                   // curr = 1
+        }
+        return res->next;
+    }
+};
