@@ -107,7 +107,6 @@ public:
             l2 = l2->next;
         }
 
-        ListNode* res = new ListNode(0);
         ListNode* curr = NULL;
         int carry = 0;
 		while(!s1.empty() || !s2.empty())

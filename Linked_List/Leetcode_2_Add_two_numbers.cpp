@@ -57,9 +57,10 @@ public:
         if (carry)
         {
            temp->next = new ListNode(carry);
-            temp = temp->next;
+           temp = temp->next;
         } 
         return res.next;
         
     }
 };
+
