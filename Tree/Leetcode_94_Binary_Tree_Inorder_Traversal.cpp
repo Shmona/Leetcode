@@ -57,7 +57,32 @@ public:
     }
 };
 
-//ITERATIVE APPROACH
+//ITERATIVE APPROACH  : Using Stack
 /* Time complexity : O(N)
 Space complexity : o(N)
 */
+
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> res;
+        if (root == NULL)
+            return res;
+        
+        stack<TreeNode*> s;
+        TreeNode * temp = root;
+        while(temp || !s.empty())
+        {
+            while (temp)
+            {
+                s.push(temp);
+                temp = temp->left;
+            }
+            temp = s.top();
+            res.push_back(temp->val);
+            s.pop();
+            temp = temp->right;
+        }
+        return res;
+    }
+};
