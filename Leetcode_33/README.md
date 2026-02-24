@@ -1,4 +1,4 @@
-# Problem Statement
+# Problem Statement : Search in Rotated Sorted Array
 There is an integer array nums sorted in ascending order (with distinct values).
 
 Prior to being passed to your function, nums is possibly left rotated at an unknown index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be left rotated by 3 indices and become [4,5,6,7,0,1,2].
@@ -30,7 +30,9 @@ You must write an algorithm with O(log n) runtime complexity.
 
 ## Approach
 **Using Binary Search TC = O(Log N), SC = O(1)**
-- Since the array id rotated one, so there are two sorted half
+- Solution Link : https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/1928320702/
+  
+- Since the array is rotated one, so there are two sorted half
 - Find the index from where its been rotated => start
 - We have two sorted halves :  left half => 0 to start ,   right half => start + 1 to n - 1
 - if target lies in left half i.e target <= nums[0] && nums[start] >= target  
