@@ -1,4 +1,5 @@
-# Problem Statement 
+
+# Problem Statement :  Median of Two Sorted Arrays
 Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 The overall run time complexity should be O(log (m+n)).
 
@@ -23,11 +24,15 @@ The overall run time complexity should be O(log (m+n)).
 - -10^6 <= nums1[i], nums2[i] <= 10^6
 
 ## Approach 
-**Naive Approach : Two-pointer approach (Full merging) TC = O(m + n), SC = O(m + n)**
+### Naive Approach : Two-pointer approach (Full merging) TC = O(m + n), SC = O(m + n)
+- Solution Link : https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/1923419741/
+  
 - Merge the two sorted arrays into a new sorted array merge of length l = m + n
 - Compute the median from merge array
 
-**Optimal Solution : Binary Search approach TC = O(log(min(m,n))), SC = O(1)**
+### Optimal Solution : Binary Search approach TC = O(log(min(m,n))), SC = O(1)
+- Solution Link :  https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/1923528551/
+  
 - Ensure first array(A) is smaller in size than second one(B)
 
 - Partition A and B into left and right parts
@@ -39,12 +44,11 @@ The overall run time complexity should be O(log (m+n)).
             so,  i + j = m + n + 1
         2. All left elements ≤ all right elements
             Aleft <= Bright
-            Bleft <= Aright
-    
+            Bleft <= Aright 
     
 - Binary search i  in A (low = 0 , high = m):  
     - while low <= high :
-
+      
           :   i = mid point,  j = (m+n+1)/2  − i 
           :   Aleft => A[i-1] , Aright => A[i] 
           :   Bleft => B[j-1] , Bright => B[j]
