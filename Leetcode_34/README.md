@@ -1,3 +1,4 @@
+
 # Problem Statement : Find First and Last Position of Element in Sorted Array
 Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
 
@@ -27,6 +28,8 @@ You must write an algorithm with O(log n) runtime complexity.
 
 ## Approach 
 ### Naive Solution  TC = O(N) . Sc = O(1)
+- Solution Link : https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1929479307/
+  
 - Traverse the array from left to right till you reach first occurrence of target 
 - Save the index of first occurrence of target 
 - Traverse till you get differnt number than target
@@ -34,6 +37,8 @@ You must write an algorithm with O(log n) runtime complexity.
 
 
 ### Binary Search  TC = O(Log N) , SC = O(1)
+- Solution Link :  https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1929487292/
+  
 - idea is to retrive first and last occurrence of target in the given array using binary search algorithm. 
 
 - First occurrence:
