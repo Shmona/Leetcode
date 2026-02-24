@@ -1,4 +1,5 @@
-# Problem Statement 
+
+# Problem Statement : Valid Perfect Square
 Given a positive integer num, return true if num is a perfect square or false otherwise.
 
 A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itself.
@@ -21,6 +22,8 @@ You must not use any built-in library function, such as sqrt.
 
 ## Approach 
 **Using binary Search TC = O(LogN), SC = O(1)**
+- Solution Link : https://leetcode.com/problems/valid-perfect-square/submissions/1927543770/
+  
 - IDEA:
     - Any perfect square x = k × k has an integer square root k.
     - Instead of checking all possible values, search for k in the range [2, num] using binary search.
