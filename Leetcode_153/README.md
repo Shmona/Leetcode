@@ -1,4 +1,4 @@
-# Problem Statement 
+# Problem Statement : Find Minimum in Rotated Sorted Array
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
 
         [4,5,6,7,0,1,2] if it was rotated 4 times.
@@ -38,6 +38,7 @@ You must write an algorithm that runs in O(log n) time.
 IDEA :  Since given array is rotated by k times, there are two parts which are sorted. We need to find the part having original (before rotation) nums[0]
 
 **Naive Solution : TC = O(N), O(1)**
+- Solution Link :  https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/submissions/1928439425/
 
 - if n == 1 (base case) : return nums[0]
 - identify whether array is rotated or not by comparing first and last element
@@ -49,6 +50,7 @@ IDEA :  Since given array is rotated by k times, there are two parts which are s
     - Else return nums[0]  as array is same as original after rotation
 
 **Using Binary Search TC = O(Log N) SC = O(1)**
+- Solution Link : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/submissions/1928444964/
 
 - Maintain two pointers pointing to extreme ends low => 0 , high => n - 1
 - While ( low < high ) :
