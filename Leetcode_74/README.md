@@ -1,4 +1,5 @@
-# Problem Statement 
+
+# Problem Statement : Search a 2D Matrix
 You are given an m x n integer matrix matrix with the following two properties:
 
 Each row is sorted in non-decreasing order.
@@ -25,13 +26,19 @@ You must write a solution in O(log(m * n)) time complexity.
 
 ## Approach 
 ### Naive approach : TC = O(row * col), SC= O(1)
+- Solution Link :  https://leetcode.com/problems/search-a-2d-matrix/submissions/1929772601/
+  
 - Traverse the matrix row-wise and return true if target is found
 
 ### Binary Search approach over each row : TC = O(row + log(col)), SC= O(1)
+- Solution Link : https://leetcode.com/problems/search-a-2d-matrix/submissions/1924503898/
+  
 - Traverse the matrix row-wise
 - apply binary search on the row if target lies in that row
 
 ### Binary Search approach over flatten matrix : TC = O(log (m * n)), SC= O(1)
+- Solution Link :  https://leetcode.com/problems/search-a-2d-matrix/submissions/1924489748/
+  
 - Apply binary search on the flatten matrix 
 - maintain two pointer low => 0 and high => row*col - 1
 - while  low <= high :
