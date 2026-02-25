@@ -1,4 +1,5 @@
-# Problem Statement 
+
+# Problem Statement  :   Longest Substring Without Repeating Characters
 Given a string s, find the length of the longest substring without duplicate characters.
 
 **Example 1:**
@@ -27,6 +28,9 @@ Given a string s, find the length of the longest substring without duplicate cha
 - s consists of English letters, digits, symbols and spaces.
 
 ## Approach 
+### Using Sliding Windows TC = O(N)  SC = O(1)
+- Solution Link : https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/1906595456/
+
 - Maintain a window s[left .. right].
 - Expand the window by moving right one step at a time through the string.
 - If the window ever contains a duplicate character => shrink it from the left by moving left forward until the window is valid again.
