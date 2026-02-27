@@ -55,7 +55,7 @@ A conveyor belt has packages that must be shipped from one port to another withi
     - As ship capacity increases, the total days needed decreases. So the function days_needed(capacity) is monotonically decreasing.
 
 ### Using Monotonic decreasing function +  binary search : TC =  O(N Log S) where S is the sum of weights, SC = O(1)
-- Solution Link : https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/submissions/1932905662/
+- Solution Link : https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/submissions/1932920136/
 - Apply binary search over a range [low, high], where
         
         low = max_element(weights)
