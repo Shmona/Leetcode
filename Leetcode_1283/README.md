@@ -28,7 +28,8 @@ The test cases are generated so that there will be an answer.
 
 ## Approach:
 ### Using binary search : TC = O(N Log R), where R is the range , SC = O(1)
-- Solution Link : https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/submissions/1933197044/
+- Solution Link :  https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/submissions/1933208915/
+
 
 - Search divisor d in range [1, max(nums)]
 - For a candidate divisor mid, compute sum using integer math: (x + mid - 1) / mid
