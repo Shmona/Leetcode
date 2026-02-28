@@ -24,7 +24,7 @@ class Solution{
             return ans;
         }
     private:
-        int sum_formed(vector<int>& nums, int divisor, int threshold)
+        bool sum_formed(vector<int>& nums, int divisor, int threshold)
         {
             int sum = 0;
             for (auto x : nums)
