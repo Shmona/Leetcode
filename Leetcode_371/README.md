@@ -37,7 +37,7 @@ Given two integers a and b, return the sum of the two integers without using the
     - if carry != 0 :  recusively call getSum( sum,  carry << 1 )
     - return sum as answer
 
-### Iterative : TC = O(W) ,  W is bit width ( 32 for integers ) ,  SC = 1  
+### Iterative : TC = O(W) ,  W is bit width ( 32 for integers ) ,  SC = O(1)  
 - Solution Link :  https://leetcode.com/problems/sum-of-two-integers/submissions/1943776740/
 
 - while b != 0 :
